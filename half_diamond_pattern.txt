@@ -1,0 +1,99 @@
+import java.util.Scanner;
+public class Solution {
+    
+    public static void main(String[] args) {
+        // Write your code here
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int row=0;
+        if(n==0)
+        {
+            System.out.println("*");
+            
+        }
+         if(row==n)
+            {
+                System.out.print("*");
+                return;
+            }
+        while(row<=n)
+        {
+            int col=0;
+           
+            //int col=0;
+            while(col<=row)
+            {
+                if(col==0)
+                {
+                    System.out.print("*");
+                    col=col+1;
+                }
+                else if(row==col)
+                {
+                    System.out.print(col);
+                    col=col+1;
+                }
+                else
+                {
+                    System.out.print(col);
+                    col=col+1;
+                }  
+            }
+            int dec=row-1;
+            while(dec>=0)
+            {
+                if(dec==0)
+                {
+                  System.out.print("*");  
+                    break;
+                }
+                System.out.print(dec);
+                dec=dec-1;
+            }
+            
+          row=row+1;
+          System.out.println();  
+        }
+        row=n-1;
+        //System.out.print("hi"+row);
+        while(row>=0)
+        {
+            int col=0;
+            while(col<=row)
+            {
+                if(col==0)
+                {
+                    System.out.print("*");
+                    col=col+1;
+                }
+                else if(col==row)
+                {
+                    System.out.print(col);
+                    col=col+1;
+                }
+                else
+                {
+                   System.out.print(col);
+                    col=col+1;
+                }
+            }
+                int dec=row-1;
+            //System.out.print("hi"+dec);
+            while(dec>=0)
+            {
+                if(dec==0)
+                {
+                  System.out.print("*");  
+                    break;
+                }
+                System.out.print(dec);
+                dec=dec-1;
+            }
+            
+            
+            row=row-1;
+            System.out.println();
+        }
+    
+    }
+}

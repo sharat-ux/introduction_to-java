@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int i=1;
+        if(n==0)
+        {
+            System.out.print(n);
+            return;
+        }
+        while(i<n)
+        {
+            if(i*i==n)
+            {
+                //System.out.print(i+" hi");
+                break;
+            }
+            if(i*i<n)
+            {
+                //System.out.print(i+" hi");
+               i=i+1; 
+            }
+            else
+            {
+                i=i-1;
+                //System.out.print(i+" hi");
+                break;
+            }
+            
+        }
+        
+        System.out.print(i);
+
+	}
+}

@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		
+		/* Your class should be named Solution.
+	 	* Read input as specified in the question.
+	 	* Print output as specified in the question.
+		*/
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        //int k=sc.nextInt();
+        int first=0,second=1,third=0,count=0;
+        while(count<=n)
+        {
+          if(count==n)
+          {
+              System.out.println(first);
+              return;
+          }
+          third=first+second;
+            first=second;
+            second=third;
+            count++;
+        }
+
+		
+	}
+
+}

@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		
+		/* Your class should be named Solution.
+	 	* Read input as specified in the question.
+	 	* Print output as specified in the question.
+		*/
+      Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int row=1;
+        while(row<=n)
+        {
+            int col=1,p=row;
+            while(col<row+1)
+            {
+                char ch=(char)('A'+p-1);
+                System.out.print(ch);
+                col=col+1;
+                p=p+1;
+            }
+            row=row+1;        
+        System.out.println();
+        }
+    
+		
+	}
+
+}

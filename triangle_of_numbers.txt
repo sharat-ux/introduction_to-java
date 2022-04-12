@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Solution {
+
+	public static void main(String[] args) {
+		/* Your class should be named Solution.
+	 	* Read input as specified in the question.
+	 	* Print output as specified in the question.
+		*/
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int row=1,temp=0;
+    while(row<=n)
+    {
+        int space=1;
+        while(space<=n-row)
+        {
+            System.out.print(' ');
+            space=space+1;
+        }
+        int col=1;
+        temp=row;
+        while(col<=row)
+        {
+            
+            System.out.print(temp);
+            col=col+1;
+            temp=temp+1;
+        }
+        int dec=(2*row)-2;
+        while(dec>=row)
+        {
+            System.out.print(dec);
+            dec=dec-1;
+        }
+        row=row+1;
+        System.out.println();
+     }
+	}
+}

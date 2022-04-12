@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+      Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int i=1,count=1;
+        while(count<=n)
+        {
+            int term =3*(i)+2;
+            if(term%4!=0)
+            {
+                System.out.print(term+" ");
+                count++;
+                
+            }
+           i=i+1;
+        }
+        
+	}
+}
